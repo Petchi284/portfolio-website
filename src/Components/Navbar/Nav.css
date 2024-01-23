@@ -1,0 +1,108 @@
+.logo {
+  object-fit: cover;
+  height: 3rem;
+  width: 4rem;
+  border-radius: 30px;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(60px);
+  height: 5rem;
+  width: 100vw;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.listitem {
+  margin: 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: rgb(65, 233, 242);
+  position: relative;
+  /* transition: 0.1s;  */
+}
+.listitem::before {
+  /* color: rgb(226, 43, 165);
+    padding: 0.5rem;
+    border-bottom: 1px solid rgb(226, 43, 165);*/
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.6rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.3s ease;
+}
+.listitem:hover:before {
+  width: 100%;
+  transform: translateX(0);
+  opacity: 1;
+}
+.desktopmenubtn {
+  color: black;
+  cursor: pointer;
+  background-color: whitesmoke;
+  border: none;
+  box-shadow: 5px 5px 5px rgb(65, 233, 242);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.active {
+  color: #7e61e7;
+}
+.mobilemenu {
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+}
+.navmenu {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+.menulistitem {
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background: rgb(30, 30, 30);
+  cursor: pointer;
+}
+@media screen and (max-width: 720px) {
+  .mobilemenu {
+    display: flex;
+  }
+  .menulistitem {
+    text-align: center;
+  }
+  .desktopmenu {
+    display: none;
+  }
+  .desktopmenubtn {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mobilemenu {
+    display: flex;
+  }
+}

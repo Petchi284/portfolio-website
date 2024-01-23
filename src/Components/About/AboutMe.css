@@ -1,0 +1,70 @@
+.aboutme {
+  overflow: hidden;
+  width: 200vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  margin: 4rem;
+}
+
+.abt-titlename {
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  color: aqua;
+  text-align: justify;
+}
+.abt-des {
+  font-weight: 600;
+  font-size: 1rem;
+  max-width: 50rem;
+  margin: 1rem 2rem;
+  padding: 0 2rem;
+  text-align: justify;
+  color: aqua;
+}
+.abt-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 90px;
+}
+.abtimg img {
+  height: 42%;
+  width: 92%;
+  background-size: cover;
+  box-shadow: 5px 5px 5px rgb(17, 218, 225);
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.abtimg img:hover {
+  transform: scale(1.07);
+  transition: 1s ease-out;
+}
+.abtimg {
+  width: 200%;
+  margin-right: 40px;
+}
+.abt-details {
+  width: 200%;
+}
+
+.abt-details h4 {
+  text-align: center;
+  font-size: 22px;
+  color: rgb(228, 33, 238);
+}
+.abt-details p {
+  font-size: 16px;
+  padding: 20px 30px;
+  font-weight: 500;
+  color: aqua;
+  word-spacing: 2px;
+  text-align: justify;
+}

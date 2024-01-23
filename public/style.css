@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Dancing+Script:wght@600&family=Ephesis&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+}
+
+body {
+  background-color: #060417;
+  color: white;
+  overflow: hidden;
+  overflow-y: scroll;
+}

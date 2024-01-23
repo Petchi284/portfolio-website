@@ -1,0 +1,188 @@
+.about {
+  height: 80vh;
+  width: 100vw;
+  margin: 2rem 1rem;
+}
+
+.Profile-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  height: 80%;
+  color: black;
+  background-size: cover;
+}
+.Profile-parent {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+}
+.Profile-details-name {
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+}
+.role {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 24px 0;
+}
+.role h1 {
+  font-size: 30px;
+}
+.primary-text {
+  color: rgb(66, 236, 222);
+}
+.primary-text h1 {
+  color: rgb(65, 233, 242);
+}
+.tagline {
+  font-size: 19px;
+  margin: 5px 0 0 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(65, 233, 242);
+}
+.optns{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.optns .btn-highlight-btn {
+  padding: 10px;
+  background: transparent;
+  color: rgb(94, 231, 231);
+  font-size: 24px;
+  border-radius: 30px;
+  margin: 0 0 0 28px;
+  box-shadow: 5px 5px 5px rgb(65, 233, 242);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.optns .btn-highlight-btn:hover {
+  margin: 0 0 0 28px;
+  background-color: rgb(88, 230, 235);
+  color: #111;
+}
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+  margin: 0 0px 0 100px;
+}
+.profile-background {
+  height: 92%;
+  width: 92%;
+  background-image: url("../../assets/petchiammalk.jpg");
+  background-size: cover;
+  box-shadow: 5px 5px 5px rgb(17, 218, 225);
+  border-radius: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.profile-background:hover {
+  transform: scale(1.07);
+  transition: 1s ease-out;
+}
+.about-page{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem;
+}
+.about-page.about-title{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.about-page .about-des{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+@media screen and (max-width: 840px) {
+  .profile-picture {
+    margin: 0 0px 0 50px;
+    right: -10vw;
+  }
+  .Profile-details-name {
+    font-size: 4vw;
+  }
+  .role .primary-text {
+    font-size: 12px;
+  }
+  .optns.btn-highlight-btn{
+    margin: 40px;
+   
+  }
+  .tagline span{
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+  }
+  span .tagline{
+    margin: 0px -10px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   font-size: 1.5rem;
+  }
+  .optns {
+    height: 30px;
+    width: 50px;
+    margin: -0px 0px -50px 170px;
+    padding: 2px;
+  }
+ .para{
+  display: none;
+ }
+}
+@media screen and (max-width: 910px) {
+  .profile-picture {
+    height: 320px;
+    width: 320px;
+    margin: 0 0 0 4px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .profile-picture {
+    margin: 0 !important;
+  }
+  .Profile-parent {
+    flex-direction: column-reverse;
+    margin: 40px 0 0 0;
+  }
+  .optns {
+    display: flex;
+    justify-content: space-between;
+  }
+  .Details {
+    margin: 25px 0 0;
+  }
+  .optns .btn-highlight-btn {
+    margin: 0 !important;
+  }
+  .optns,
+  .role {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .profile-picture {
+    height: 275px;
+    width: 275px;
+    margin-top: -90px;
+  }
+  .Details {
+    width: 90%;
+  }
+}
